@@ -29,10 +29,10 @@ pygame.init()
 
 load_dotenv()
 
-genai.configure(api_key=os.getenv("API_KEY"))
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 client = ElevenLabs(
-  api_key = "1d6c2e24e0cb07d49892ff253871e4b4", # Defaults to ELEVEN_API_KEY
+  api_key = "ELEVEN_LABS_API_KEY", # Defaults to ELEVEN_API_KEY
 )
 
 # lisa_voice = os.getenv("VOICE_ID")
@@ -40,7 +40,7 @@ client = ElevenLabs(
 client_bgm = Client("https://facebook-musicgen.hf.space/")
 
 # ESP32 (Camera) Feed
-url = 'http://192.168.137.223/cam-hi.jpg'
+url = 'URL_OF_ESP32'
 
 
 # Prompt for Image to Story
@@ -62,8 +62,8 @@ Try to incorporate the output within 2000 words.
 
 # speech_note = ""
 
-extro = r"C:\Users\revan\Desktop\LimitlessSight\Main\Final\intro\Extro.mp3"
-intro = r"C:\Users\revan\Desktop\LimitlessSight\Main\Final\intro\Intro.mp3"
+extro = r".\Extro.mp3"
+intro = r".\Intro.mp3"
 
 
 def play_audio(audio_file):
@@ -120,8 +120,8 @@ def capture_and_generate_story(input_prompt):
         else:
             break
 
-    filename_d = "C:/Users/revan/Downloads/image_captured/image_new_flipped.jpg"
-    filename = r"C:\Users\revan\Desktop\LimitlessSight\Main\Final\image\Input.jpg"
+    filename_d = r".\image_new_flipped.jpg"
+    filename = r".\Input.jpg"
 
     # Write the frame to a JPEG file
     frame = cv2.rotate(frame, cv2.ROTATE_90_CLOCKWISE)
@@ -212,7 +212,7 @@ def text_to_Speech(speech_note):
   """
   
   
-  save_path = r"C:\Users\revan\Desktop\LimitlessSight\Main\Final\music_files\Speech\Speech.mp3"
+  save_path = r".\Speech.mp3"
 
   
   # client = ElevenLabs(
@@ -224,7 +224,7 @@ def text_to_Speech(speech_note):
     text = speech_note,
     stream = True,
     voice = Voice(
-      voice_id = "bhEemcXOrLfu4pJJwkkp", # Lisa - Gentle, calm Female
+      voice_id = "VVOICE_ID", 
       settings = VoiceSettings(stability=0.71, similarity_boost=0.5, style=0.0, use_speaker_boost=True)
       ),
     )
@@ -245,7 +245,7 @@ def get_duration(audio_path):
 
     r"""
     returns the duration of the audio_clip in seconds.
-    example of audio_path: 'C:\Users\rec\Desktop\LimitlessSight\text_to_audio.wav' 
+    example of audio_path: '.\text_to_audio.wav' 
     
     """
     
@@ -262,11 +262,11 @@ def get_duration(audio_path):
 
 
 
-def copy_a_to_b(source_path, destination_path = r'C:\Users\revan\Desktop\LimitlessSight\Main\Final\music_files\Music'):
+def copy_a_to_b(source_path, destination_path = r'.\music_files\Music'):
 
     r"""
     Copies source file to destination.
-    Default Destination: Music (musicGen) ['C:\Users\revan\Desktop\LimitlessSight\Main\LimitlessSight\music_files\Music']
+    Default Destination: Music (musicGen) ['C.\music_files\Music']
     """
 
     shutil.copy2(source_path, destination_path)
@@ -350,7 +350,7 @@ def combine_audios(speech_path, bgm_path):
 
     r'''
     Combines the Speech & Bgm
-    Exported to 'C:\Users\revan\Desktop\LimitlessSight\Main\Final\Final\final_fade_length1.wav'.
+    Exported to '.\Final\final_fade_length1.wav'.
     '''
 
 
@@ -378,10 +378,10 @@ def combine_audios(speech_path, bgm_path):
     combined = speech.overlay(bgm)
 
     # Save the result
-    final_path = r'C:\Users\revan\Desktop\LimitlessSight\Main\Final\Final\final_fade_length1.wav'
+    final_path = r'.\Final\final_fade_length1.wav'
     combined.export(final_path, format='wav')
 
-    print("\n\n" + r"Export Completed!, Find at 'C:\Users\revan\Desktop\LimitlessSight\Main\Final\Final\final_fade_length1.wav'" + "\n") 
+    print("\n\n" + r"Export Completed!, Find at "+ final_path + "\n") 
     
     return final_path
 
@@ -412,7 +412,6 @@ def execute_pipeline(speech_note):
 
 
     # Convert text to speech
-    # speech_path = text_to_Speech(speech_note, apikey)
     speech_path = text_to_Speech(speech_note)  # saved at \Speech
 
     # Get music tags from gemini based on speech_note
@@ -431,7 +430,7 @@ def execute_pipeline(speech_note):
     # Use earphones for better experience!!
     out = play_audio(final_audio)
 
-    print(out)
+    return "Successfully executed"
 
 
 
@@ -444,4 +443,3 @@ while True:
 
 
 
-# env(cloned_nut)
