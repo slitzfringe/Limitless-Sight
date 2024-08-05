@@ -10,8 +10,16 @@ The idea started with some creative sparks from my teammates, but it wasn’t un
 
 Limitless Sight was born, with the tag-line “Hear the unseen, feel the unimagined...” from a simple, yet powerful idea: to help visually impaired individuals "see" the world around them through sound. 
 
-# Product video:
+# Product Appearance:
+<img src="assests/Limitless Sight.jpg" width=300 height=400>
+
 https://github.com/user-attachments/assets/e46b8998-2ba7-4678-86cb-717f6b1225c3
+
+# Eyeglasses
+<img src="assests/eyeglasses.jpg" width=350 height=500>
+
+# ESP module
+<img src="assests/ESP module.jpg" width=350 height=500>
 
 # The Impact:
 
