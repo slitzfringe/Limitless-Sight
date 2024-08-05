@@ -1,0 +1,5 @@
+pip install gradio_client
+pip install librosa
+pip install elevenlabs
+pip install pandas
+pip install pydub
