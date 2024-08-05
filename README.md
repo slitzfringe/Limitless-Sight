@@ -22,6 +22,8 @@ Limitless Sight was born, with the tag-line “Hear the unseen, feel the unimagi
 
 Limitless Sight harnesses the power of generative AI to create an immersive auditory experience. We used Google Gemini for converting images into text descriptions, focusing on clarity and accuracy to paint a vivid picture, allowing listener to imagine their surroundings.  
 Facebook MusicGen then adds a layer of emotional depth by generating mood-synchronized background music. Finally, Eleven Labs converts the narrative into speech,  merging it seamlessly with the background music to produce a complete audio experience that is both informative and immersive.
+We demonstrated our prototype using an ESP32 cam connected via Wi-Fi, with data processing happening on my laptop, which we presented as a microprocessor and the final output-“a combination of narrative and music” was delivered through a Bluetooth neckband.
+With precision and persistence, we provided an on-the-go solution for users.
 
 # Dependences:
 This are the dependencies that were present in my conda environment.
@@ -153,8 +155,6 @@ This are the dependencies that were present in my conda environment.
 * websockets==11.0.3
 * wheel==0.42.0
 * zipp 
-We demonstrated our prototype using an ESP32 cam connected via Wi-Fi, with data processing happening on my laptop, which we presented as a microprocessor and the final output-“a combination of narrative and music” was delivered through a Bluetooth neckband.
-With precision and persistence, we provided an on-the-go solution for users.
 
 # Gratitude:
 A big thank you to Google Gemini, Facebook MusicGen, and Eleven Labs for their exceptional APIs that made this project possible.
