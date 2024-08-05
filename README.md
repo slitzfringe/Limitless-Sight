@@ -1,8 +1,12 @@
 # Limitless-Sight
+**"Hear the Unseen, Feel the Unimagined."**
+
+<img src="assests/limitless-sight-high-resolution-logo.png" width=400 height=300>
+
 
 Thank you for taking the time to read this post.
 
-What started as a spark of curiosity led us to create something truly meaningful: Limitless Sight. 
+What started as a spark of curiosity led us to create something truly meaningful: **Limitless Sight**. 
 
 At the beginning of our final year, as we brainstormed ideas for our engineering project, our focus was on creating something that would genuinely make a difference. Instead of following the well-trodden path, we chose to address a need that could bring positive change to society, specifically for visually impaired individuals.
 
@@ -36,10 +40,10 @@ https://github.com/user-attachments/assets/68789303-5f0f-46dc-bd40-eca9296d2b19
 
 # How It Works:
 
-Limitless Sight harnesses the power of generative AI to create an immersive auditory experience. We used Google Gemini for converting images into text descriptions, focusing on clarity and accuracy to paint a vivid picture, allowing listener to imagine their surroundings.  
-Facebook MusicGen then adds a layer of emotional depth by generating mood-synchronized background music. Finally, Eleven Labs converts the narrative into speech,  merging it seamlessly with the background music to produce a complete audio experience that is both informative and immersive.
-We demonstrated our prototype using an ESP32 cam connected via Wi-Fi, with data processing happening on my laptop, which we presented as a microprocessor and the final output-“a combination of narrative and music” was delivered through a Bluetooth neckband.
-With precision and persistence, we provided an on-the-go solution for users.
+Limitless Sight harnesses the power of generative AI to create an immersive auditory experience. We used **Google Gemini** for converting images into text descriptions, focusing on clarity and accuracy to paint a vivid picture, allowing listener to imagine their surroundings.  
+**Facebook MusicGen** then adds a layer of emotional depth by generating mood-synchronized background music. Finally, **Eleven Labs** converts the narrative into speech,  merging it seamlessly with the background music to produce a complete audio experience that is both informative and immersive.
+
+We demonstrated our prototype using an **ESP32 cam** (connected via Wi-Fi) mounted on Eyeglaseses, with data processing happening on my laptop, which we presented as a microprocessor. The final output - a combination of narrative and music - was delivered through a Bluetooth neckband, providing an on-the-go solution for users.
 
 # Dependences:
 This are the dependencies that were present in my conda environment.
@@ -173,9 +177,9 @@ This are the dependencies that were present in my conda environment.
     zipp 
 
 # Gratitude:
-A big thank you to Google Gemini, Facebook MusicGen, and Eleven Labs for their exceptional APIs that made this project possible.
-I’m especially grateful to Archana Ma’am for her belief and support, and to David Sir for giving us the initial confidence boost.
-A special mention to Vaishnav K for his unwavering support and invaluable contributions, which were instrumental in bringing this project to life. My deepest thanks to Swathi Ambujakshan Am for the crucial advice to stay calm and focused, helping us overcome challenges and stay on track.
+A big thank you to **Google Gemini**, **Facebook MusicGen**, and **Eleven Labs** for their exceptional APIs that made this project possible.
+I’m especially grateful to <a href="https://www.linkedin.com/in/archana-chitters-21a37a320/">**Archana Ma’am**</a> for her belief and support, and to <a href="https://www.linkedin.com/in/david-william-raj-l-220860315/">**David Sir**</a> for giving us the initial confidence boost.
+A special mention to <a href="https://www.linkedin.com/in/vaishnav-k-7575aa1a9/">**Vaishnav K**</a> for his unwavering support and invaluable contributions, which were instrumental in bringing this project to life. My deepest thanks to <a href="https://www.linkedin.com/in/swathi-ambujakshan-a36062119/">**Swathi Ambujakshan**</a> for the crucial advice to stay calm and focused, helping us overcome challenges and stay on track.
 A heartfelt thanks to my entire team, mentors, and everyone who helped make this vision a reality.
 
 
