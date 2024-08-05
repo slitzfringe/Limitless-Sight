@@ -23,6 +23,7 @@ https://github.com/user-attachments/assets/e46b8998-2ba7-4678-86cb-717f6b1225c3
 
 
 # Demo Output
+<img src="" width=600 height=300>
 https://github.com/user-attachments/assets/68789303-5f0f-46dc-bd40-eca9296d2b19
 
 # How It Works:
